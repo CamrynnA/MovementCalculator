@@ -36,14 +36,14 @@ std::wstring formatSummary(const RouteResult& route) {
     }
     std::wostringstream out;
     out << std::fixed << std::setprecision(2);
-    out << (route.discountedRates ? L"PARAMOUNT / CROWN HOUSE COSTS" : L"STANDARD COSTS") << L"\r\n\r\n";
-    out << L"TOTAL ROUTE COST\r\n" << route.totalCost << L" stamina\r\n\r\n";
+    out << L"TOTAL ROUTE COST:\r\n" << route.totalCost << L" stamina\r\n";
+    out << route.turns << L" turns taken" << L"\r\n\r\n";
     if (route.turns == 1) {
         out << L"ONE TURN\r\nStamina remaining: " << route.staminaRemaining << L"\r\n";
     } else {
-        out << L"ROUTE BREAKDOWN\r\n";
+        out << L"ROUTE SUMMARY:\r\n";
         for (int turn = 1; turn < route.turns; ++turn) {
-            out << L"Turn " << turn << L": 12.00 stamina — exhausted\r\n";
+            out << L"Turn " << turn << L": 12.00 stamina spent, army exhausted\r\n";
         }
         out << L"Turn " << route.turns << L": " << route.finalTurnCost
             << L" stamina\r\n\r\nStamina remaining at destination: "
