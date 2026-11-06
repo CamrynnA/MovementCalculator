@@ -1,0 +1,14 @@
+﻿C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Microsoft\VC\v180\Microsoft.CppBuild.targets(551,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (Project2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main_win.cpp
+  movement.cpp
+C:\Users\caliq\source\repos\Project2\Project2\movement.cpp(49,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\caliq\source\repos\Project2\Project2\movement.cpp(51,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\caliq\source\repos\Project2\Project2\movement.cpp(52,37): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\caliq\source\repos\Project2\Project2\movement.cpp(54,23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\caliq\source\repos\Project2\Project2\movement.cpp(55,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\caliq\source\repos\Project2\Project2\movement.cpp(56,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 144 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Project2.vcxproj -> C:\Users\caliq\source\repos\Project2\x64\Release\MovementCalculator.exe
